@@ -6,7 +6,7 @@ This is a simple Gacha Club API. With it you can make a server for online charac
 
 1. Rent a web hosting *(For example here: [Contabo](https://contabo.com/en/web-hosting/))*.
 2. 
-    - Method 1: Download the files frim this GitHub repo.
+    - Method 1: [Download the files](https://github.com/FemLol2003/gacha-club-php-api/releases) frim this GitHub repo.
     - Method 2: If the web server support Git use it to setup the server.
 3. Upload files into the web host.
 4. Create the database and run the [`database/database.sql`](database/database.sql) file. *(Recomened to use [phpMyAdmin](https://www.phpmyadmin.net/).)*
