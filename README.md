@@ -1,4 +1,8 @@
+![Banner](https://lunime.com/gachaclub/webbanner.jpg)
+
 # Gacha Club PHP API
+
+![GitHub release (with filter)](https://img.shields.io/github/v/release/FemLolStudio/gacha-club-php-api) ![GitHub License](https://img.shields.io/github/license/FemLolStudio/gacha-club-php-api)
 
 This is a simple Gacha Club API. With it you can make a server for online character import-export and data transfer.
 
@@ -12,21 +16,25 @@ This is a simple Gacha Club API. With it you can make a server for online charac
 4. Create the database and run the [`database/database.sql`](database/database.sql) file. *(Recomened to use [phpMyAdmin](https://www.phpmyadmin.net/).)*
 5. Apply [enviorment variables](#enviorment-variables) or write them directly into the [`scripts/lib/connect.php`](scripts/lib/connect.php).
     - For example: `getenv("SERVER")` => `"127.0.0.1"`
+6. Switching out the links inside the Gacha Club mod. *(For data transfering changing variable names at the importing page. (for example `xdatastring1` => `datastring1`))*
+7. Using CloudFlare proxy for the web space.**\*** *(Optional)*
+
+> **\*** It's recomened to use CloudFlare proxy, because the Adobe AIR runtime somewhy don't know the Let's Encrypt certificates. *(It's required for https connections)*
 
 ## Enviorment variables
 
 You need to setup these variables to enable connection between the PHP files and the database.
 
-- `SERVER`: mysql server address
+* `SERVER`: mysql server address
     - default: `"localhost"`
     - For example: `"127.0.0.1"`, `"localhost"`
-- `PORT`: mysql server port *(`1`-`65535`)*
+* `PORT`: mysql server port *(`1`-`65535`)*
     - Default: `3306`
-- `USER`: mysql username
+* `USER`: mysql username
     - For example: `"root"`
-- `PASSWORD`: mysql user password
+* `PASSWORD`: mysql user password
     - For example: `"password@123"`
-- `DATABASE`: mysql database name
+* `DATABASE`: mysql database name
     - For example: `"gacha-club"`
 
 ## License
