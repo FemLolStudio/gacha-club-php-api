@@ -55,8 +55,15 @@ if ($result->num_rows == 1)
 {
     $datas = $result->fetch_assoc();
     $datas = json_decode($datas["data"]);
-    $datas->systemResult = 2;
-    echo http_build_query($datas);
+    
+    // Prepend 'x' to each key
+    $modifiedDatas = [];
+    foreach ($datas as $key => $value) {
+        $modifiedDatas['x' . $key] = $value;
+    }
+    
+    $modifiedDatas["systemResult"] = 2;
+    echo http_build_query($modifiedDatas);
 }
 else
 {

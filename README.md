@@ -16,9 +16,8 @@ This is a simple Gacha Club API. With it you can make a server for online charac
     - Method 2: If the web server support Git use it to setup the server.
 3. Upload files into the web host.
 4. Create the database and run the [`database/database.sql`](database/database.sql) file. *(Recomened to use [phpMyAdmin](https://www.phpmyadmin.net/).)*
-5. Apply [enviorment variables](#enviorment-variables) or write them directly into the [`scripts/lib/connect.php`](scripts/lib/connect.php).
-    - For example: `getenv("SERVER")` => `"127.0.0.1"`
-6. Switching out the links inside the Gacha Club mod. *(For data transfering changing variable names at the importing page. (for example `xdatastring1` => `datastring1`))*
+5. Apply [Enviorment variables](#enviorment-variables) or write them directly into the [`scripts/lib/connect.php`](scripts/lib/connect.php). *(Follow [Enviorment variables](#enviorment-variables) steps bellow.)*
+6. Switching out the links inside the Gacha Club mod. *(Follow [Gacha Club files](#gacha-club-files) steps bellow.)*
 7. Using CloudFlare proxy for the web space.**\*** *(Optional)*
 
 > **\*** It's recomened to use CloudFlare proxy, because the Adobe AIR runtime somewhy don't know the Let's Encrypt certificates. *(It's required for https connections)*
@@ -38,6 +37,33 @@ You need to setup these variables to enable connection between the PHP files and
     - For example: `"password@123"`
 * `DATABASE`: mysql database name
     - For example: `"gacha-club"`
+
+> If you can't setup enviorment variables write the values directly into the [`scripts/lib/connect.php`](scripts/lib/connect.php) file into the `$static_<name>` variables.
+
+## Gacha Club files
+
+You need to switch out from these files these links:
+
+1. **File: `club_export.php`**
+    - Uploading OC to the server *(Export)*
+    - ActionScript file: `gacha_club_fla/importexpoort_<number>.as`
+    - Old link: `https://gacha.club/gclubdata/club_export.php`
+    - New link: `https://<your_domain>/scripts/club_export.php` *(or similar)*
+1. **File: `club_import.php`**
+    - Downloading OC from the server *(Import)*
+    - ActionScript file: `gacha_club_fla/importexpoort_<number>.as`
+    - Old link: `https://gacha.club/gclubdata/club_import.php`
+    - New link: `https://<your_domain>/scripts/club_import.php` *(or similar)*
+1. **File: `club_register.php`**
+    - Uploading transfer datas to the server *(Data Transfer)*
+    - ActionScript file: `gacha_club_fla/accounts_<number>.as`
+    - Old link: `https://lunime.com/gachaclub/gclubdata/club_register.php`
+    - New link: `https://<your_domain>/scripts/club_register.php` *(or similar)*
+1. **File: `club_login.php`**
+    - Downloading transfer datas from the server *(Restore)*
+    - ActionScript file: `gacha_club_fla/restore_<number>.as`
+    - Old link: `https://lunime.com/gachaclub/gclubdata/club_login.php`
+    - New link: `https://<your_domain>/scripts/club_login.php` *(or similar)*
 
 ## License
 
