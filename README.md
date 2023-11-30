@@ -2,9 +2,7 @@
 
 # Gacha Club PHP API
 
-![Static Badge](https://img.shields.io/badge/language-php-purple) ![GitHub release (with filter)](https://img.shields.io/github/v/release/FemLolStudio/gacha-club-php-api) ![GitHub License](https://img.shields.io/github/license/FemLolStudio/gacha-club-php-api) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/FemLolStudio/gacha-club-php-api)
-
-
+![Static Badge](https://img.shields.io/badge/language-php-purple) [![GitHub release](https://img.shields.io/github/v/release/FemLolStudio/gacha-club-php-api)](https://github.com/FemLolStudio/gacha-club-php-api/releases) [![GitHub License](https://img.shields.io/github/license/FemLolStudio/gacha-club-php-api)](LICENSE.txt) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/FemLolStudio/gacha-club-php-api)
 
 This is a simple Gacha Club API. With it you can make a server for online character import-export and data transfer.
 
