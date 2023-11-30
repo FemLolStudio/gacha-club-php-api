@@ -17,17 +17,17 @@ This is a simple Gacha Club API. With it you can make a server for online charac
 
 You need to setup these variables to enable connection between the PHP files and the database.
 
-> - `SERVER`: mysql server address
->   - default: `"localhost"`
->   - For example: `"127.0.0.1"`, `"localhost"`
-> - `PORT`: mysql server port *(`1`-`65535`)*
->   - Default: `3306`
-> - `USER`: mysql username
->   - For example: `"root"`
-> - `PASSWORD`: mysql user password
->   - For example: `"password@123"`
-> - `DATABASE`: mysql database name
->   - For example: `"gacha-club"`
+- `SERVER`: mysql server address
+    - default: `"localhost"`
+    - For example: `"127.0.0.1"`, `"localhost"`
+- `PORT`: mysql server port *(`1`-`65535`)*
+    - Default: `3306`
+- `USER`: mysql username
+    - For example: `"root"`
+- `PASSWORD`: mysql user password
+    - For example: `"password@123"`
+- `DATABASE`: mysql database name
+    - For example: `"gacha-club"`
 
 ## License
 
