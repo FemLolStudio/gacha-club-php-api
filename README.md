@@ -6,6 +6,8 @@
 
 This is a simple Gacha Club API. With it you can make a server for online character import-export and data transfer.
 
+[**Download**](https://github.com/FemLolStudio/gacha-club-php-api/releases)
+
 ## Setup
 
 1. Rent a web hosting *(For example here: [Contabo](https://contabo.com/en/web-hosting/))*.
