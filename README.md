@@ -31,4 +31,4 @@ You need to setup these variables to enable connection between the PHP files and
 
 ## License
 
-[MIT](LICENSE.txt)
+Gacha Club PHP API is licensed under the [MIT License](LICENSE.txt). You're free to use, modify, and distribute the code as you see fit.
